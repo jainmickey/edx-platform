@@ -2,6 +2,8 @@
 Middleware that checks user standing for the purpose of keeping users with
 disabled accounts from accessing the site.
 """
+from __future__ import absolute_import
+
 from django.conf import settings
 from django.http import HttpResponseForbidden
 from django.utils.translation import ugettext as _
